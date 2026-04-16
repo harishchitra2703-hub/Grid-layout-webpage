@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>body{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.container{
+    display:grid;
+    
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:100px 400px 450px 450px 300px 100px 300px 300px 300px ;
+    grid-template-areas:
+    "h h h"
+    "d1 d1 i1"
+    "i2 d2 d2"
+    "d3 d3 i3"
+    "d4 d4 d4"
+    "d5 d5 d5"
+    "i5 i5 i5"
+    "d6 d6 d6"
+    "f f f";
+    
+}
+
+.header{
+    grid-area:h;
+}
+
+.one{
+    grid-area:d1;
+    color:rgb(7, 58, 74);
+    background-color:rgb(213, 219, 218);
+    padding:20px;
+     margin-left:100px;
+     margin-right:0px;
+}
+
+.two{
+    grid-area:d2;
+    color:rgb(7, 58, 74); 
+     margin-left:100px;
+
+
+}
+
+.three{
+    grid-area:d3;
+    color:rgb(7, 58, 74);
+    margin-left:100px;
+    margin:0 100px;
+}
+
+.three p{
+    font-size:20px;
+    margin-bottom: 0;
+}
+
+
+.three p{
+    font-size:20px;
+    margin-top: 0;
+}
+
+.four{
+    grid-area:d4;
+    color:rgb(7, 58, 74);
+    background-color:rgb(213, 219, 218);
+    margin-right:100px;
+    margin-left:100px;
+    margin-top:20px;
+}
+
+
+.five{
+    grid-area:d5;
+    color:rgb(7, 58, 74);
+    margin-left:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.five .inner5{
+    margin:10px;
+}
+.six{
+    grid-area:d6;
+    color:rgb(7, 58, 74);
+    margin-left:270px;
+    margin-right:270px;
+
+
+}
+.i1{
+    grid-area:i1;
+    background-color:rgb(213, 219, 218);
+    
+
+}
+.i2{
+    grid-area:i2;
+}
+.i3{
+    grid-area:i3;
+}
+.footer{
+    background-color:rgb(7, 58, 74);
+    color:white;
+    grid-area:f;
+}
+
+.innerfive{
+    grid-area:i5;
+    display:grid;
+    grid-template-columns:repeat(3,300px);
+    grid-template-rows:300px;
+    gap:30px;
+}
+.innerfive div{
+    padding:10px;
+    border:2px solid black;
+    border-radius:7px;
+    height:250px;
+
+}
+
+.container>div{
+    
+    
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    font-family:"Sanserif";
+    
+}
+
+.fbutton{
+    border:3px solid white;
+    background-color:rgb(7, 58, 74);
+    color:white;
+    padding:10px;
+}
+
+.fh{
+    margin:auto;
+}
+.ulfour{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:0px;
+    list-style:none;
+}
+
+.button1{
+    padding:10px;
+    width:300px;
+    margin:auto;
+}
+
+.ulfour li{
+    padding:30px;
+}
+
+.sub{
+    background-color:aliceblue
+}
+
+.buttonsub1{
+    border:3px solid rgb(7, 58, 74);
+    border-radius:10px;
+    width:200px;
+    padding:10px;
+    background-color:cornslik;
+
+}</style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="header"><h1>Free sites</h1></div>
+
+    <div class="one"><h2>Join the ultimate teach book club</h2>
+        <p>Turn your reading time into learining time with fellow teach enthusiasts. Get curated recommendations, job variant discussions, and level up your skills one chapter at a time.</p>
+        <button class="button1">Review membershio option</button>
+    </div>
+    
+    <div class="i1"><img src="https://picsum.photos/400/350??teamwork&sig=1" alt="Random Image" style="margin-top:20px;"></div>
+
+    <div class="i2"><img src="https://picsum.photos/400/350?teamwork&sig=2" alt="image"  style="margin-top:20px;margin-left:100px;"></div>
+
+    <div class="two"><h2>Read together, grow together</h2>
+        <ul>
+            <li>Monthly curated reads selected by industry experts</li>
+            <li>virtual and in-person meetups for deep-dive discussions</li>
+            <li>Early access to new tech book releases</li>
+            <li>Author Q&A  sessions with tech through leaders</li>
+        </ul></div>
+
+    <div class="three"><h1>Not your average book club</h1>
+        <p>Connect with a community that speaks your language- from<b>Phyton</b> to  and <b>TypeScript</b> and everything in between. Out discussions blend technical depth with practical applications.</p>
+    </div>
+
+    <div class="i3"><img src="https:picsum.photos/400/350?teamwork&sig=3" alt="image"  style="margin-top:20px;margin-right:100px;"></div>
+
+    <div class="four"><h2 class="fh">&nbsp&nbsp&nbsp&nbsp&nbsp Your tech<br> reading journey</h2>
+        <b><ul class="ulfour">
+            <li>choose your membership tier </li>
+            <li>Get your monthly book selection</li>
+            <li>Join our discussion forums</li>
+            <li>attend exclusive meetups</li>
+        </ul></b></div>
+
+    <div class="five"> 
+        <h2>Membership options</h2></div>
+       <div class="innerfive">
+        <div>
+            <h4>Starter</h4>
+           <b> <p>$19/month</p></b>
+            <ul>
+                <li>1 book/month</li>
+                <li>online forums</li>
+            </ul>
+            <button class="buttonsub1">subscribe Now</button>
+        </div>
+
+        <div class="sub">
+            <h4>Pro</h4>
+            <h5>$29</h5>
+            <ul>
+                <li>2 books/month</li>
+                <li>Virtual meetups</li>
+            </ul>
+             <button class="buttonsub1">subscribe Now</button>
+        </div>
+
+        <div>
+            <h4>Enterprise</h4>
+            <h3>Custom</h3>
+            <ul>
+                <li>Team access</li>
+                <li>Private sessions</li>
+            </ul>
+            <button class="buttonsub1">Talk To US</button>
+        </div>
+        
+    </div>
+
+    <div class="six">  <h2>"This book club transformed my technical reading from a solitary into an enriching community experience. The discussions are gold!"</h2>
+        <p>Sarah chen,software Architect</p>
+</div>
+
+    <div class="footer"> <h2>Ready to debug your<br>&nbsp&nbsp&nbsp&nbsp&nbsp reading list?</h2>
+        <button class="fbutton">Review Membership options</button>
+        <p>2024-Tech Book club</p>
+ </div>
+    </div>
+</body>
+</html>
